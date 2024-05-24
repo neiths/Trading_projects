@@ -1,0 +1,14 @@
+Please create a strategy that following buy and sell signal of Golden Cross strategy
+Please create a strategy that buy position when MA1 > MA50, and close position after 10 cycle
+Please create a strategy that buy when RSI is below 50 and sell when RSI is above 80
+Please create a strategy that buy when above upperband and below lowerband of Bollinger Bands
+Please create a strategy that buys when the MACD line crosses above the signal line and sells when the MACD line crosses below the signal line
+Please create a strategy that buys when the Stochastic Oscillator is below 20 (indicating oversold conditions) and sells when the Stochastic Oscillator is above 80 (indicating overbought conditions).
+Please create a strategy that buys when the price crosses above the Parabolic SAR and sells when the price crosses below the Parabolic SAR.
+Please create a strategy that buys when the 20-period EMA crosses above the 50-period EMA and sells when the 20-period EMA crosses below the 50-period EMA
+Please create a strategy that buys when the RSI is below 30 and the price is near a key support level, and sells when the RSI is above 70 and the price is near a key resistance level.
+Please create a strategy that buys when the price crosses above the Ichimoku Cloud and sells when the price crosses below the Ichimoku Cloud.
+Please create a strategy that buys when the price is above the VWAP and the RSI is below 50, and sells when the price is below the VWAP and the RSI is above 50.
+Please create a strategy that buys when the price breaks above the upper Donchian Channel and sells when the price breaks below the lower Donchian Channel.
+Please create a strategy that buys when the price moves a certain percentage above the ATR value and sells when the price moves the same percentage below the ATR value
+Please create a strategy that buys when the price is above the pivot point and sells when the price is below the pivot point
