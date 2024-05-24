@@ -43,14 +43,7 @@ def generate_strategy(prompt, base_strats):
     """Generates a new strategy based on the given prompt and base strategy."""
     system = f"""
     You are a python developer tasked with creating a workable strategy from human requirements.
-    Your task is to create a new BackTestStrategy that follows the instructions below.
-    Note: Only return the class strategy and change the `execute` function, nothing else.
-
     {prompt}
-
-    Below is the structure of the codebase, including the MovingAverageStrategy as an example. Please name your class strategy as BackTestStrategy and change only the `execute` function.
-    ----------------------------
-    "{base_strats}"
     """
     
     chat_completion = client.chat.completions.create(
@@ -102,6 +95,7 @@ def main():
     base_strats = load_base_strategy()
 
     #prompt = "Please create a strategy that buys when MA1 > MA50, and closes the position after 10 cycles."
+    # Please create a strategy that buy when RSI is below 50 and sell when RSI is above 80.
     #revise = "I don't see where you close the position after hold_counter equal 0"
     
     while True:
