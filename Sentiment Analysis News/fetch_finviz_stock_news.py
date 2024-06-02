@@ -16,7 +16,7 @@ def fetch_stock_news(tickers):
     for ticker in tickers:
         try:
             url = finviz_url + ticker
-            req = requests(url=url, headers={'user-agent': 'my-app'})
+            req = Request(url=url, headers={'user-agent': 'my-app'})
             response = urlopen(req)
             html = BeautifulSoup(response, 'html.parser')
             news_table = html.find(id='news-table')
