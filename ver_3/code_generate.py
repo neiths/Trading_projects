@@ -11,20 +11,23 @@ import backtrader as bt
 from base_strategy import BaseStrategy
 
 # Set environment variables for OpenAI
-os.environ["ANYSCALE_API_BASE"] = "https://api.endpoints.anyscale.com/v1"
-os.environ["ANYSCALE_API_KEY"] = "esecret_mxhfybv3ehvz954hihatkyqh24"
+#os.environ["ANYSCALE_API_BASE"] = "https://api.endpoints.anyscale.com/v1"
+#os.environ["ANYSCALE_API_KEY"] = "esecret_mxhfybv3ehvz954hihatkyqh24"
+
 
 base_strats = load_base_strategy()
 
 # Initialize the OpenAI client
 client = OpenAI(
-    api_key=os.environ['ANYSCALE_API_KEY'],
-    base_url=os.environ['ANYSCALE_API_BASE']
+    #api_key=os.environ['ANYSCALE_API_KEY'],
+    #base_url=os.environ['ANYSCALE_API_BASE']
+    base_url = "https://api.openai.com/v1",
+    api_key = "sk-proj-hzdACvolA5RH7T2eELEqT3BlbkFJmNndAfFdGULirq0495yp"
 )
 
 def chat_query(*args):
     chat_completion = client.chat.completions.create(
-        model = "meta-llama/Meta-Llama-3-70B-Instruct",
+        model = "gpt-4o",
         messages = [
             {
                 "role": "user", "content": args[0]
