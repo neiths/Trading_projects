@@ -7,7 +7,7 @@ import backtrader.strategies as btstrats
 
 # Set environment variables for OpenAI
 os.environ["ANYSCALE_API_BASE"] = "https://api.endpoints.anyscale.com/v1"
-os.environ["ANYSCALE_API_KEY"] = "esecret_mxhfybv3ehvz954hihatkyqh24"
+os.environ["ANYSCALE_API_KEY"] = ""
 
 # Initialize the OpenAI client
 client = OpenAI(
