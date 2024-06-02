@@ -12,7 +12,7 @@ from base_strategy import BaseStrategy
 
 # Set environment variables for OpenAI
 #os.environ["ANYSCALE_API_BASE"] = "https://api.endpoints.anyscale.com/v1"
-#os.environ["ANYSCALE_API_KEY"] = "esecret_mxhfybv3ehvz954hihatkyqh24"
+#os.environ["ANYSCALE_API_KEY"] = ""
 
 
 base_strats = load_base_strategy()
@@ -22,7 +22,7 @@ client = OpenAI(
     #api_key=os.environ['ANYSCALE_API_KEY'],
     #base_url=os.environ['ANYSCALE_API_BASE']
     base_url = "https://api.openai.com/v1",
-    api_key = "sk-proj-hzdACvolA5RH7T2eELEqT3BlbkFJmNndAfFdGULirq0495yp"
+    api_key = ""
 )
 
 def chat_query(*args):

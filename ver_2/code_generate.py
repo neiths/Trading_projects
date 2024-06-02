@@ -10,7 +10,7 @@ from utils import extract_error_message, get_code_from_text, load_base_strategy
 
 # Set environment variables for OpenAI
 os.environ["ANYSCALE_API_BASE"] = "https://api.endpoints.anyscale.com/v1"
-os.environ["ANYSCALE_API_KEY"] = "esecret_mxhfybv3ehvz954hihatkyqh24"
+os.environ["ANYSCALE_API_KEY"] = ""
 
 base_strats = load_base_strategy()
 
